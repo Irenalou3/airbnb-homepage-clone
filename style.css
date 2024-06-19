@@ -1,61 +1,63 @@
 /* Styles for the header container */
 #main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: white;
-    border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
 }
 
 /* Styles for the logo */
 .header-logo {
-    height: 40px;
+  height: 40px;
 }
 
 /* Styles for the menu button */
 .menu-button {
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 /* Styles for the profile icon */
 .profile-icon {
-    height: 40px;
-    border-radius: 50%;
+  height: 40px;
+  border-radius: 50%;
 }
+
+/* Styles for the hero section */
 .hero {
-    background-image: url('images/beautiful.jpg')
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding: 80px 10px;
-    color: white;
-  }
-  
-  .hero-content h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-  }
-  
-  .hero-content p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-  }
-  
-  .cta-button {
-    padding: 15px 30px;
-    font-size: 1em;
-    background-color: #ff385c; /* AirBnB's signature color */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .cta-button:hover {
-    background-color: #e03350; /* Darker shade for hover effect */
-  }
-  
+  background-image: url('images/beautiful.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 80px 10px;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  font-size: 1em;
+  background-color: #ff385c; /* AirBnB's signature color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #e03350; /* Darker shade for hover effect */
+}
+
