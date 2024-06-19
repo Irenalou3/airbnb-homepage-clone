@@ -1,64 +1,54 @@
-/* Styles for the header container */
-#main-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: white;
-  border-bottom: 1px solid #ddd;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirBnB Homepage Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="main-header">
+        <img src="images/Airbnb.jpg" alt="AirBnB Logo" class="header-logo">
+        <button class="menu-button">☰</button>
+        <img src="images/profile-icon.jpg" alt="Profile Icon" class="profile-icon">
+    </header>
 
-/* Styles for the logo */
-.header-logo {
-  height: 40px;
-}
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your Next Adventure</h1>
+            <p>Discover unique places to stay and things to do all around the world.</p>
+            <button class="cta-button">Get Started</button>
+        </div>
+    </section>
 
-/* Styles for the menu button */
-.menu-button {
-  font-size: 24px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
+    <section class="explore-nearby">
+        <h2>Explore Nearby</h2>
+        <div class="nearby-locations">
+            <div class="location">
+                <img src="images/location1.jpg" alt="Location 1">
+                <h3>Location 1</h3>
+                <p>Description of location 1.</p>
+            </div>
+            <div class="location">
+                <img src="images/location2.jpg" alt="Location 2">
+                <h3>Location 2</h3>
+                <p>Description of location 2.</p>
+            </div>
+            <div class="location">
+                <img src="images/location3.jpg" alt="Location 3">
+                <h3>Location 3</h3>
+                <p>Description of location 3.</p>
+            </div>
+            <div class="location">
+                <img src="images/location4.jpg" alt="Location 4">
+                <h3>Location 4</h3>
+                <p>Description of location 4.</p>
+            </div>
+        </div>
+    </section>
 
-/* Styles for the profile icon */
-.profile-icon {
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 10px; /* Add some margin to the right for spacing */
-  object-fit: cover; /* Ensures the image covers the area properly */
-}
-
-/* Styles for the hero section */
-.hero {
-  background-image: url('images/beautiful.jpg');
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding: 80px 10px;
-  color: white;
-}
-
-.hero-content h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-.hero-content p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
-}
-
-.cta-button {
-  padding: 15px 30px;
-  font-size: 1em;
-  background-color: #ff385c; /* AirBnB's signature color */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.cta-button:hover {
-  background-color: #e03350; /* Darker shade for hover effect */
-}
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+</body>
+</html>
