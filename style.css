@@ -25,6 +25,8 @@
 .profile-icon {
   height: 40px;
   border-radius: 50%;
+  margin-right: 10px; /* Add some margin to the right for spacing */
+  object-fit: cover; /* Ensures the image covers the area properly */
 }
 
 /* Styles for the hero section */
@@ -61,3 +63,26 @@
   background-color: #e03350; /* Darker shade for hover effect */
 }
 
+/* Media queries for mobile responsiveness */
+@media (max-width: 600px) {
+  #main-header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .hero-content h1 {
+      font-size: 1.5em;
+  }
+
+  .hero-content p {
+      font-size: 1em;
+  }
+
+  .cta-button {
+      padding: 10px 20px;
+      font-size: 0.9em;
+  }
+
+  .profile-icon {
+      margin-right: 0; /* Remove margin on mobile for better alignment */
+  }
