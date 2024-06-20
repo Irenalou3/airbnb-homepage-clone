@@ -1,86 +1,55 @@
-/* Styles for the header container */
-#main-header {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f8f8f8;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: start;
+  height: 100vh;
+  padding-top: 20px;
+}
+
+.search-container {
+  display: flex;
   align-items: center;
-  padding: 10px;
   background-color: white;
-  border-bottom: 1px solid #ddd;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 5px 15px;
+  width: 90%;
+  max-width: 400px;
 }
 
-/* Styles for the logo */
-.header-logo {
-  height: 40px;
+.search-container i {
+  margin-right: 10px;
+  color: #333;
+  font-size: 16px;
 }
 
-/* Styles for the menu button */
-.menu-button {
-  font-size: 24px;
+.search-container input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+}
+
+.search-container button {
   background: none;
   border: none;
+  margin: 0 5px;
+  color: #666;
   cursor: pointer;
+  font-size: 14px;
 }
 
-/* Styles for the profile icon */
-.profile-icon {
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 10px; /
-  object-fit: cover; /
+.search-container button:hover {
+  color: #000;
 }
 
-/* Styles for the hero section */
-.hero {
-  background-image: url('images/beautiful.jpg');
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding: 80px 10px;
-  color: white;
+.separator {
+  margin: 0 5px;
+  color: #666;
+  font-size: 14px;
 }
-
-.hero-content h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-.hero-content p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
-}
-
-.cta-button {
-  padding: 15px 30px;
-  font-size: 1em;
-  background-color: #ff385c; /
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.cta-button:hover {
-  background-color: #e03350; /
-}
- (max-width: 600px) {
-  #main-header {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-
-  .hero-content h1 {
-      font-size: 1.5em;
-  }
-
-  .hero-content p {
-      font-size: 1em;
-  }
-
-  .cta-button {
-      padding: 10px 20px;
-      font-size: 0.9em;
-  }
-
-  .profile-icon {
-      margin-right: 0; /* Remove margin on mobile for better alignment */
-  }
+  
