@@ -3,52 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AirBnB Homepage Clone</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Airbnb-like Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            height: 100vh;
+            padding-top: 20px;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 5px 10px;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        .search-container i {
+            margin-right: 5px;
+            color: #333;
+        }
+
+        .search-container input {
+            border: none;
+            outline: none;
+            flex: 1;
+            font-size: 14px;
+        }
+
+        .search-container button {
+            background: none;
+            border: none;
+            margin: 0 3px;
+            color: #666;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .search-container button:hover {
+            color: #000;
+        }
+
+        .separator {
+            margin: 0 3px;
+            color: #666;
+            font-size: 12px;
+        }
+    </style>
 </head>
 <body>
-    <header id="main-header">
-        <img src="images/Airbnb.jpg" alt="AirBnB Logo" class="header-logo">
-        <button class="menu-button">☰</button>
-        <img src="images/profile-icon.jpg" alt="Profile Icon" class="profile-icon">
-    </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Find Your Next Adventure</h1>
-            <p>Discover unique places to stay and things to do all around the world.</p>
-            <button class="cta-button">Get Started</button>
-        </div>
-    </section>
-
-    <section class="explore-nearby">
-        <h2>Explore Nearby</h2>
-        <div class="nearby-locations">
-            <div class="location">
-                <img src="images/location1.jpg" alt="Location 1">
-                <h3>Location 1</h3>
-                <p>Description of location 1.</p>
-            </div>
-            <div class="location">
-                <img src="images/location2.jpg" alt="Location 2">
-                <h3>Location 2</h3>
-                <p>Description of location 2.</p>
-            </div>
-            <div class="location">
-                <img src="images/location3.jpg" alt="Location 3">
-                <h3>Location 3</h3>
-                <p>Description of location 3.</p>
-            </div>
-            <div class="location">
-                <img src="images/location4.jpg" alt="Location 4">
-                <h3>Location 4</h3>
-                <p>Description of location 4.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <!-- Footer content here -->
-    </footer>
+    <div class="search-container">
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="Where to?" />
+        <button>Anywhere</button>
+        <span class="separator">·</span>
+        <button>Any week</button>
+        <span class="separator">·</span>
+        <button>Add guests</button>
+    </div>
 </body>
 </html>
