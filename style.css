@@ -52,3 +52,11 @@ body {
   color: #666;
   font-size: 14px;
 }
+.container {
+  display: grid;
+  justify-items: start; /* Aligns items to the start (left) */
+}
+
+.left-item {
+  /* Any additional styling for the item */
+}
