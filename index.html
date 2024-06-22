@@ -1,76 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--header section-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airbnb-like Page</title>
+    <title>Airbnb-clone</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f8f8f8;
-            display: flex;
-            justify-content: center;
-            align-items: start;
-            height: 100vh;
-            padding-top: 20px;
-        }
-
-        .search-container {
-            display: flex;
-            align-items: center;
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 30px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            padding: 5px 10px;
-            width: 90%;
-            max-width: 400px;
-        }
-
-        .search-container i {
-            margin-right: 5px;
-            color: #333;
-        }
-
-        .search-container input {
-            border: none;
-            outline: none;
-            flex: 1;
-            font-size: 14px;
-        }
-
-        .search-container button {
-            background: none;
-            border: none;
-            margin: 0 3px;
-            color: #666;
-            cursor: pointer;
-            font-size: 12px;
-        }
-
-        .search-container button:hover {
-            color: #000;
-        }
-
-        .separator {
-            margin: 0 3px;
-            color: #666;
-            font-size: 12px;
-        }
-    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
 </head>
 <body>
     <div class="search-container">
         <i class="fa fa-search"></i>
         <input type="text" placeholder="Where to?" />
-        <button>Anywhere</button>
+        <button class="text-sm font-medium">Anywhere</button>
         <span class="separator">·</span>
-        <button>Any week</button>
+        <button class="text-sm font-medium">Any week</button>
         <span class="separator">·</span>
-        <button>Add guests</button>
+        <button class="text-sm font-medium">Add guests</button>
     </div>
-</body>
-</html>
+    <!--Hero Section-->
+    <div class="icon-row">
+        <div class="icon-item">
+            <img src="images/local_activity_24dp_FILL0_wght400_GRAD0_opsz24 (1).png" alt="" class="h-6 w-6">
+            <p class="text-xs font-normal">Icons</p>
+        </div>
+        <div class="icon-item">
+            <img src="images/pool_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="" class="h-6 w-6">
+            <p class="text-xs font-normal">Amazing Pools</p>
+        </div>
+        <div class="icon-item">
+            <img src="images/ufo-illustration-on-a-background-premium-quality-symbols-icons-for-concept-and-graphic-design-vector.jpg" alt=" class="h-6 w-6">
+            <p class="text-xs font-normal">OMG!</p>
+        </div>
+        <div class="icon-item">
+            <img src="images/cards_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="" class="h-6 w-6">
+            <p class="text-xs font-normal">Amazing Views</p>
+        </div>
