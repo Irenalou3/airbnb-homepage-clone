@@ -2,11 +2,11 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   background-color: #f8f8f8;
-  display: flex;
-  justify-content: center;
-  align-items: start;
   height: 100vh;
-  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align items to the center horizontally */
+  padding-top: 20px; /* Add some padding to the top */
 }
 
 .search-container {
@@ -14,17 +14,17 @@ body {
   align-items: center;
   background-color: white;
   border: 1px solid #ddd;
-  border-radius: 50px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  padding: 5px 15px;
+  border-radius: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
   width: 90%;
   max-width: 400px;
+  margin-top: 20px; /* Add margin to the top */
 }
 
 .search-container i {
-  margin-right: 10px;
+  margin-left: 5px;
   color: #333;
-  font-size: 16px;
 }
 
 .search-container input {
@@ -32,15 +32,18 @@ body {
   outline: none;
   flex: 1;
   font-size: 14px;
+  min-width: 50px; /* Ensure input takes minimum space */
 }
 
 .search-container button {
   background: none;
   border: none;
-  margin: 0 5px;
+  margin: 0 3px;
   color: #666;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  font-weight: 500;
 }
 
 .search-container button:hover {
@@ -48,8 +51,82 @@ body {
 }
 
 .separator {
-  margin: 0 5px;
+  margin: 0 3px;
   color: #666;
+  font-size: 8px;
+}
+
+.container {
+  text-align: left;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.space-x-5 > * + * {
+  margin-left: 1.25rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.text-gray-400 {
+  color: #cbd5e0;
+}
+
+.hover\:text-black:hover {
+  color: #000;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px; /* Add margin for spacing */
+}
+
+.icon-row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px; /* Add some margin to the top */
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon-item img {
+  width: 24px; /* Adjust the size as needed */
+  height: 24px; /* Adjust the size as needed */
+}
+
+.icon-item p {
+  margin: 5px 0 0 0;
   font-size: 14px;
+  color: black; /* Ensure the text is black */
 }
   
