@@ -2,11 +2,10 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   background-color: #f8f8f8;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Align items to the center horizontally */
-  padding-top: 20px; /* Add some padding to the top */
+  align-items: center;
+  padding-top: 20px;
 }
 
 .search-container {
@@ -19,7 +18,7 @@ body {
   padding: 5px 10px;
   width: 90%;
   max-width: 400px;
-  margin-top: 20px; /* Add margin to the top */
+  margin-top: 20px;
 }
 
 .search-container i {
@@ -32,7 +31,7 @@ body {
   outline: none;
   flex: 1;
   font-size: 14px;
-  min-width: 50px; /* Ensure input takes minimum space */
+  min-width: 50px;
 }
 
 .search-container button {
@@ -56,60 +55,13 @@ body {
   font-size: 8px;
 }
 
-.container {
-  text-align: left;
-}
-
-.flex {
-  display: flex;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.space-x-5 > * + * {
-  margin-left: 1.25rem;
-}
-
-.h-24 {
-  height: 6rem;
-}
-
-.text-gray-400 {
-  color: #cbd5e0;
-}
-
-.hover\:text-black:hover {
-  color: #000;
-}
-
-.text-xs {
-  font-size: 0.75rem;
-}
-
-.font-normal {
-  font-weight: 400;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.icon-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 10px; /* Add margin for spacing */
-}
-
 .icon-row {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
   max-width: 800px;
-  margin-top: 20px; /* Add some margin to the top */
+  margin-top: 20px;
 }
 
 .icon-item {
@@ -117,15 +69,91 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin: 0 10px;
 }
 
 .icon-item img {
-  width: 24px; /* Adjust the size as needed */
-  height: 24px; /* Adjust the size as needed */
+  width: 20px;
+  height: 20px;
 }
 
 .icon-item p {
   margin: 5px 0 0 0;
+  font-size: 11px;
+  color: black;
+  font
+}
+
+.listing-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.listing {
+  width: 90%;
+  max-width: 800px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.listing-image {
+  width: 100%;
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Ensure the image covers the area */
+  display: block;
+}
+
+.live-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: white; /* Background color to match button style */
+  color: black;
+  padding: 5px 10px;
+  border-radius: 50%; /* Rounded corners to make it circular */
+  font-size: 12px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for button effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.listing-details {
+  padding: 10px;
+}
+
+.listing-details h2 {
+  font-size: 13px;
+  margin: 0 0 10px;
+}
+
+.listing-details .hosted-by {
+  font-size: 11px;
+  color: gray;
+  margin: 5px 0;
+}
+
+.listing-details .price, .listing-details .coming {
+  font-size: 11px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.listing-details .coming {
   font-size: 14px;
-  color: black; /* Ensure the text is black */
+  color: black;
+  margin: 5px 0;
 }
