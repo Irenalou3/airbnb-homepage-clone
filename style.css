@@ -253,9 +253,9 @@ body {
 }
 
 .rental-location {
-  flex: 1 1 calc(50% - 10px); /* Adjusted to ensure two columns */
+  flex: 1 1 calc(50% - 10px); 
   padding: 10px;
-  box-sizing: border-box; /* Ensures padding is included in the width */
+  box-sizing: border-box; 
 }
 
 .rental-location h3 {
